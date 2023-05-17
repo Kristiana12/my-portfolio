@@ -1,0 +1,23 @@
+@use '../abstracts/index' as *;
+
+.owl-carousel {
+  .owl-stage {
+    display: flex;
+  }
+  .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+  }
+}
+
+.owl-theme .owl-dots button.owl-dot.active span {
+  background: color(color-primary);
+}
+
+.owl-theme .owl-dots button.owl-dot span {
+  background: color(color-secondary);
+}
+
+.owl-theme .owl-dots button.owl-dot:hover span {
+  background: color(color-secondary-m);
+}

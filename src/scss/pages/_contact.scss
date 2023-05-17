@@ -1,0 +1,9 @@
+@use '../abstracts/index' as *;
+
+.section-contact {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}

@@ -1,0 +1,88 @@
+@use '../abstracts/index' as *;
+
+.circle-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.2rem;
+  margin: 3rem auto 0;
+
+  @include media(break-point(break-point-small-screen)) {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3.5rem auto 0;
+    gap: 2.5rem;
+  }
+  @include media(break-point(break-point-tablet)) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.circle-wrap {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background: color(color-glassmorphism-light);
+  border-radius: 50%;
+
+  @include media(break-point(break-point-desktop)) {
+    width: 120px;
+    height: 120px;
+  }
+
+  & .circle .mask,
+  & .circle .fill {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+
+    @include media(break-point(break-point-desktop)) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .circle .mask .fill {
+    clip: rect(0px, 50px, 100px, 0px);
+
+    @include media(break-point(break-point-desktop)) {
+      clip: rect(0px, 60px, 120px, 0px);
+    }
+  }
+
+  .circle .mask {
+    clip: rect(0px, 100px, 100px, 50px);
+
+    @include media(break-point(break-point-desktop)) {
+      clip: rect(0px, 120px, 120px, 60px);
+    }
+  }
+
+  .mask.full.animate,
+  .circle .fill.animate {
+    animation: fill ease-in-out 2s;
+  }
+
+  .inside-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: color(color-bg-primary);
+    color: color(color-white);
+    line-height: 90px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 100;
+    font-size: font-size(font-size-text-m);
+
+    @include media(break-point(break-point-desktop)) {
+      width: 110px;
+      height: 110px;
+      line-height: 110px;
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: font-size(font-size-text-l);
+    }
+  }
+}

@@ -1,0 +1,105 @@
+@use '../abstracts/index' as *;
+
+// ARTICLES - COLOR
+.blog__card {
+  background-color: color(color-bg-blog-card);
+  padding: 1rem 1.75rem 2rem;
+  border-radius: 30px 30px 16px 16px;
+  min-width: 310px;
+  box-shadow: inset -8px -8px 16px color(color-bg-footer),
+    inset 8px -8px 16px color(color-bg-footer);
+  @include flex(start, center);
+  flex-direction: column;
+
+  h4 {
+    font-size: font-size(font-size-heading-s);
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
+    position: relative;
+    transition: color 0.4s ease-in;
+    padding: 5px 2px;
+  }
+
+  a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    transform: scaleY(1);
+    transform-origin: bottom center;
+    transition: transform 0.4s ease-in;
+  }
+
+  a:hover {
+    color: color(color-bg-primary);
+  }
+  a:hover::after {
+    transform: scaleY(13);
+  }
+}
+
+// Colors depending on article
+.html-article {
+  border-top: 4px solid color(color-blog-html);
+  h4,
+  a {
+    color: color(color-blog-html);
+  }
+
+  a::after {
+    background-color: color(color-blog-html);
+  }
+}
+.css-article {
+  border-top: 4px solid color(color-blog-css);
+  h4,
+  a {
+    color: color(color-blog-css);
+  }
+  a::after {
+    background-color: color(color-blog-css);
+  }
+}
+.javascript-article {
+  border-top: 4px solid color(color-blog-js);
+  h4,
+  a {
+    color: color(color-blog-js);
+  }
+  a::after {
+    background-color: color(color-blog-js);
+  }
+}
+.wordpress-article {
+  border-top: 4px solid color(color-blog-wp);
+  h4,
+  a {
+    color: color(color-blog-wp);
+  }
+  a::after {
+    background-color: color(color-blog-wp);
+  }
+}
+.php-article {
+  border-top: 4px solid color(color-blog-php);
+  h4,
+  a {
+    color: color(color-blog-php);
+  }
+  a::after {
+    background-color: color(color-blog-php);
+  }
+}

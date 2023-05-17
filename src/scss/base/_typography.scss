@@ -1,0 +1,101 @@
+@use '../abstracts/index' as *;
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: font-family(font-family-header), sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1.main-heading,
+h5 {
+  font-size: font-size(font-size-heading-s);
+}
+
+h1.section-title,
+.skills--title {
+  font-size: font-size(font-size-heading-m);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-big-tablet)) {
+    & {
+      font-size: font-size(font-size-heading-l);
+    }
+  }
+}
+
+h1.blog-title {
+  font-size: font-size(font-size-heading-blog);
+  letter-spacing: 2px;
+  line-height: 1.4;
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    font-size: font-size(font-size-heading-m);
+  }
+}
+
+// Utility Classes
+.color {
+  color: color(color-primary);
+  font-weight: bold;
+}
+
+.text {
+  line-height: 1.6;
+  font-size: font-size(font-size-text-m);
+  color: color(color-white-m);
+}
+
+/* MENU */
+nav#main__nav {
+  & ul.main__nav--list {
+    & a {
+      color: color(color-white);
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: font-size(font-size-link-s);
+      letter-spacing: 2px;
+    }
+  }
+}
+
+/* CTA BUTTON */
+#contact__form .btn-primary,
+.btn-primary {
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: font-size(font-size-text-s);
+  color: color(color-white-m);
+}
+
+//Skills
+ul.skills__list li {
+  font-size: font-size(font-size-text-m);
+}
+
+// BLOG
+.section-blog h3 {
+  text-transform: capitalize;
+}
+
+//Blog Single Page
+.blog-page-content {
+  p {
+    line-height: 1.4;
+    font-size: font-size(font-size-text-m);
+    margin: 2rem 0;
+
+    &:first-of-type::first-letter {
+      font-size: font-size(font-size-heading-blog);
+      margin-right: 0.2rem;
+    }
+  }
+}

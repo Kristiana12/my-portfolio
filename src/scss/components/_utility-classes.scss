@@ -1,0 +1,152 @@
+@use '../abstracts/index' as *;
+@use '../abstracts/animations' as *;
+
+/* Style the cursor */
+.cursors div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  // background: url('../assets/imgs/home/bub.svg') no-repeat center/ cover;
+  background: no-repeat center/ cover;
+  border-radius: 50%;
+  z-index: 10000;
+  /* Prevent from getting in the way when links are clicked */
+  pointer-events: none;
+  /* Moves the ball to the center of the cursor */
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.cursors div.invisible {
+  opacity: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1040px;
+  position: relative;
+}
+
+/* HEADINGS */
+/* home */
+
+/* about, projects */
+h1.section-title,
+.skills--title {
+  color: color(color-primary-m);
+  text-align: center;
+  pointer-events: none;
+  margin: 2.5rem auto 2.5rem;
+  width: 100%;
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    margin: 3.5rem auto 4rem;
+  }
+}
+
+.skills--title {
+  margin: 5.5rem auto 0;
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    margin: 9rem auto 0;
+  }
+}
+
+// Blog Title
+h1.blog-title {
+  margin: 2.5rem auto 3rem;
+  position: relative;
+  display: inline-block;
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    margin: 4.5rem auto 4rem;
+  }
+}
+
+h1.blog-title-html {
+  color: color(color-blog-html);
+  @include lineAfterTitle(color-blog-html);
+}
+h1.blog-title-css {
+  color: color(color-blog-css);
+  @include lineAfterTitle(color-blog-css);
+}
+h1.blog-title-javascript {
+  color: color(color-blog-js);
+  @include lineAfterTitle(color-blog-js);
+}
+h1.blog-title-php {
+  color: color(color-blog-php);
+  @include lineAfterTitle(color-blog-php);
+}
+h1.blog-title-wordpress {
+  color: color(color-blog-wp);
+  @include lineAfterTitle(color-blog-wp);
+}
+
+.text-wrapper {
+  background-color: color(color-glassmorphism-light);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1rem 1.5rem 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  width: 90%;
+
+  &.text-wrapper-small {
+    max-width: 460px;
+  }
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-tablet)) {
+    padding: 1.5rem 2rem 1.5rem;
+  }
+
+  &.center {
+    margin: 0 auto;
+  }
+}
+
+/* SECTION */
+section[class^='section-'] {
+  padding: 2.5rem 0;
+
+  &:first-of-type {
+    padding-top: 4rem;
+  }
+  &:last-of-type {
+    padding-bottom: 1rem;
+  }
+}
+
+// SUBPAGES PADDING
+.sub-page__padding {
+  padding-bottom: 3rem;
+}
+
+//Blog
+.blog-page-header {
+  text-align: center;
+}
+
+//Tags
+.tags a:link,
+.tags a:visited {
+  text-transform: capitalize;
+  text-decoration: underline;
+  transition: color 0.3s;
+  color: color(color-white-m);
+}
+
+.tags a:active,
+.tags a:hover {
+  color: color(color-white);
+}

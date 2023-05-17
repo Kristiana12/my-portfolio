@@ -1,0 +1,33 @@
+@use '../abstracts/index' as *;
+
+// Gutenberg image block
+.wp-block-image.center {
+  @include flex(center, center);
+}
+.wp-block-image.left {
+  @include flex(flex-start, center);
+}
+.wp-block-image.right {
+  @include flex(flex-end, center);
+}
+
+.wp-block-image img {
+  width: auto;
+  height: auto;
+}
+
+.wp-block-image figcaption {
+  color: color(color-white-m);
+}
+
+//Links
+.blog-page-content a,
+a[data-type] {
+  color: color(color-primary);
+  transition: color 0.3s;
+}
+
+.blog-page-content a:hover,
+a[data-type]:hover {
+  color: color(color-secondary);
+}

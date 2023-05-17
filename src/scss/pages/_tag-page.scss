@@ -1,0 +1,16 @@
+@use '../abstracts/index' as *;
+
+.tag-title {
+  color: color(color-primary-m);
+}
+
+.all-tags ul {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+
+  li.tags a {
+    margin-left: 0.2rem;
+  }
+}

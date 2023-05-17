@@ -1,0 +1,124 @@
+@use '../abstracts/index' as *;
+
+#contact__form {
+  .contact__form--inputs {
+    border-radius: 40px;
+
+    & input,
+    & textarea {
+      width: 100%;
+      padding: 1.2rem;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      font-family: inherit;
+      background-color: color(color-glassmorphism-light);
+      color: color(color-white-m);
+      transition: border-color 0.3s;
+    }
+
+    & textarea {
+      min-height: 200px;
+      resize: vertical;
+    }
+
+    /* On focus*/
+    & input:focus,
+    & textarea:focus {
+      outline: 2px solid color(color-secondary-m);
+    }
+
+    /* On error*/
+    & input.error,
+    & textarea.error {
+      border-color: crimson;
+    }
+
+    /* LAYOUT*/
+    /* Maybe needs to be changed cause of the Wp forms classes*/
+    & input:first-child,
+    & input:nth-child(2) {
+      flex: 1;
+    }
+  }
+}
+
+/* Placeholder Color */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: color(color-white-m);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: color(color-white-m);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: color(color-white-m);
+}
+
+// *****************************************************************
+// WP FORMS STYLING
+// *****************************************************************
+#contact__form {
+  .wpforms-field-container {
+    @include flex(center, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 40px;
+    background-color: color(color-bg-primary);
+    max-width: 600px;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 101%;
+      height: 101%;
+      top: -0.5%;
+      left: -0.5%;
+      background: linear-gradient(
+        135deg,
+        color(color-bg-secondary),
+        color(color-secondary)
+      );
+      border-radius: 40px;
+      z-index: -1;
+    }
+
+    .wpforms-field-name,
+    .wpforms-field-email {
+      width: 100%;
+      /* MEDIA QUERY MIN-WIDTH: 768px */
+      @include media(break-point(break-point-tablet)) {
+        width: calc(100% / 2 - 0.5rem);
+      }
+    }
+
+    .wpforms-field-text,
+    .wpforms-field-textarea {
+      width: 100%;
+    }
+  }
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field {
+  padding: 0 !important;
+}
+
+//Confimation message
+div div.wpforms-confirmation-container-full {
+  background: color(color-glassmorphism-light);
+  border: 1px solid color(color-glassmorphism-dark);
+  color: color(color-white-m);
+  padding: 1rem;
+  border-radius: 20px;
+
+  & p:last-of-type {
+    margin: 1.5rem;
+  }
+}

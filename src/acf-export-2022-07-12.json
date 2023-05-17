@@ -1,0 +1,1869 @@
+[
+    {
+        "key": "group_62a4803cd4d70",
+        "title": "Block - Lists",
+        "fields": [
+            {
+                "key": "field_62a4804d1a22e",
+                "label": "Lists",
+                "name": "lists",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62a4824a7627c",
+                        "label": "Colorised Title Word",
+                        "name": "colorised_title_word",
+                        "type": "text",
+                        "instructions": "The first word of your title (can be colorised):",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a4805b1a22f",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "Rest of the title words that you don't want to be colorised:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a482787627d",
+                        "label": "Colorised",
+                        "name": "colorised",
+                        "type": "select",
+                        "instructions": "Pick 'Colorised' to change the color of the selected word:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "color": "Colorised"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62a4807a1a230",
+                        "label": "List Items",
+                        "name": "list_items",
+                        "type": "repeater",
+                        "instructions": "Here you can add list items:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_62a4809d1a231",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_62a4809d1a231",
+                                "label": "List Item",
+                                "name": "list_item",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_62a480cd76b54",
+                        "label": "List Image",
+                        "name": "list_image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/list"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_62c7f7e389939",
+        "title": "Block - Progress bar",
+        "fields": [
+            {
+                "key": "field_62c7f7efda692",
+                "label": "Progress bar",
+                "name": "progress_bar",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62c7f859da693",
+                        "label": "Title colorised",
+                        "name": "title_colorised",
+                        "type": "text",
+                        "instructions": "Here you can add a title or word on title(at the beginning) that can be colorised:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62c7f8e8da694",
+                        "label": "Title normal",
+                        "name": "title_normal",
+                        "type": "text",
+                        "instructions": "Here you can add a title:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62c7f912da695",
+                        "label": "Colorised",
+                        "name": "colorised",
+                        "type": "select",
+                        "instructions": "Here you can select if you want the text in the colorised title to be colorised or not:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "color": "Colorised"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62c80ea317b63",
+                        "label": "Circles",
+                        "name": "circles",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_62c80ed117b64",
+                                "label": "Text inside",
+                                "name": "text_inside",
+                                "type": "text",
+                                "instructions": "Here you can add Technology name(make sure it is short):",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_62c80ee017b65",
+                                "label": "Rotate degrees",
+                                "name": "rotate_degrees",
+                                "type": "number",
+                                "instructions": "Here you can add degrees, keep in mind 180degrees outputs 100%:",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": "",
+                                "max": "",
+                                "step": ""
+                            },
+                            {
+                                "key": "field_62c80f1617b66",
+                                "label": "color",
+                                "name": "color",
+                                "type": "select",
+                                "instructions": "Here you can select a color based on the technology you are gonna output:",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "#ff5c00": "HTML",
+                                    "#187cff": "CSS",
+                                    "#cd6799": "SASS",
+                                    "#ffe400": "JAVASCRIPT",
+                                    "#03b9f2": "WORDPRESS",
+                                    "#bd00ff": "PHP"
+                                },
+                                "default_value": false,
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/progress-bar"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_62b182736869b",
+        "title": "Block - Text",
+        "fields": [
+            {
+                "key": "field_62b1828d72913",
+                "label": "text_block",
+                "name": "text_block",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62b18a9beda31",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62b182a372914",
+                        "label": "paragraphs",
+                        "name": "paragraphs",
+                        "type": "repeater",
+                        "instructions": "Here you can add paragraphs in the block:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_62b182b172915",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_62b182b172915",
+                                "label": "paragraph",
+                                "name": "paragraph",
+                                "type": "textarea",
+                                "instructions": "Click 'Add row' to add a paragraph:",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/text"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_62a362c3b5c49",
+        "title": "Block - Text with Rounded Image",
+        "fields": [
+            {
+                "key": "field_62a435934eda3",
+                "label": "Text With Rounded Image",
+                "name": "text_with_rounded_image",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62a362d24d450",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "Here you can add an image, which will be rounded:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "60",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62a46766ad9d0",
+                        "label": "Reverse",
+                        "name": "reverse",
+                        "type": "select",
+                        "instructions": "Here you can select, if you want your text to appear left or right:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "left": "Left",
+                            "right": "Right"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62a3630c4d451",
+                        "label": "Text Block",
+                        "name": "text_block",
+                        "type": "repeater",
+                        "instructions": "Here you can add your texts:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_62a43f98a7b6a",
+                        "min": 0,
+                        "max": 3,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_62a43f98a7b6a",
+                                "label": "Paragraph",
+                                "name": "paragraph",
+                                "type": "textarea",
+                                "instructions": "Here you can add your paragraphs:",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_62a3638b53c56",
+                        "label": "Button Text",
+                        "name": "button_text",
+                        "type": "text",
+                        "instructions": "Here you can add the text that is inside the button:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62bfe772841ca",
+                        "label": "Page Link",
+                        "name": "page_link",
+                        "type": "page_link",
+                        "instructions": "Here you can add the page you want to link to:",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": "",
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "allow_archives": 1,
+                        "multiple": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/text-with-rounded-image"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_62a76fb8661c9",
+        "title": "Projects",
+        "fields": [
+            {
+                "key": "field_62a77025e7d5e",
+                "label": "Project Image",
+                "name": "project_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62c018a2dac2b",
+                "label": "Project Detail Page",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62c018bbdac2c",
+                "label": "Project detail page",
+                "name": "project_detail_page",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62c03dd97c0d4",
+                        "label": "Page Title",
+                        "name": "page_title",
+                        "type": "text",
+                        "instructions": "Here you can add a title for each project:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62c018d9dac2d",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "Here you can add your header image:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62c018f9dac2e",
+                        "label": "Text",
+                        "name": "text",
+                        "type": "repeater",
+                        "instructions": "Here you can add paragraphs:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "",
+                        "sub_fields": [
+                            {
+                                "key": "field_62c01907dac2f",
+                                "label": "paragraph",
+                                "name": "paragraph",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_62c01920dac30",
+                        "label": "Url",
+                        "name": "url",
+                        "type": "url",
+                        "instructions": "Here you can add the url to redirect to an external website:",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "projects-template.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_629903609227c",
+        "title": "Text and Image (Homepage)",
+        "fields": [
+            {
+                "key": "field_62990379ee276",
+                "label": "Text with Image",
+                "name": "text_with_image",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62a0a3b20c17c",
+                        "label": "Heading",
+                        "name": "heading",
+                        "type": "text",
+                        "instructions": "Here you can add a heading:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a0b14bbc530",
+                        "label": "Heading Last Word",
+                        "name": "heading_last_word",
+                        "type": "text",
+                        "instructions": "Last word on heading (can be colorised):",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "35",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a0b0bfbc52f",
+                        "label": "Colorise Text",
+                        "name": "colorise_text",
+                        "type": "select",
+                        "instructions": "Hier you can select if you want the last word to be colorised or not:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "color": "Colorised"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_6299038cee277",
+                        "label": "Paragraph",
+                        "name": "paragraph",
+                        "type": "textarea",
+                        "instructions": "Here you can add your text:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "75",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_62a0a45dcb042",
+                        "label": "Button Text",
+                        "name": "button_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_629903aeee278",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "Here you can add an image:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62a44d4dca579",
+                        "label": "Reverse",
+                        "name": "reverse",
+                        "type": "select",
+                        "instructions": "Here you can select if you want your text on the left or on the right side:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "left": "Left",
+                            "right": "Right"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "homepage.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6298b57727ac0",
+        "title": "Theme-Settings",
+        "fields": [
+            {
+                "key": "field_62a1ce7cb2e2a",
+                "label": "Images",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6298b5a063d62",
+                "label": "Logo",
+                "name": "logo",
+                "type": "image",
+                "instructions": "Here you can add an image (Logo):",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62a0c8fcdfee7",
+                "label": "Bubble",
+                "name": "bubble",
+                "type": "image",
+                "instructions": "Here you can add a (bubble-floating) image:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62a1ceef5fabc",
+                "label": "Social Icons",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62a1cf0fe9025",
+                "label": "icons",
+                "name": "icons",
+                "type": "repeater",
+                "instructions": "Here you can add your social icons:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_62a1cf2fe9026",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_62a1cf2fe9026",
+                        "label": "icon",
+                        "name": "icon",
+                        "type": "select",
+                        "instructions": "Choose social network:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "33",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<svg width=\"18\" height=\"36\" viewBox=\"0 0 18 36\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M4.46666 36V19.1078H0V13.0257H4.46666V7.8309C4.46666 3.74875 7.10514 0 13.1847 0C15.6463 0 17.4665 0.23598 17.4665 0.23598L17.3231 5.91556C17.3231 5.91556 15.4668 5.89748 13.4411 5.89748C11.2487 5.89748 10.8974 6.90782 10.8974 8.58474V13.0257H17.4973L17.2102 19.1078H10.8974V36H4.46666Z\" fill=\"#fff\"\/><\/svg>": "Facebook",
+                            "<svg width=\"34\" height=\"34\" viewBox=\"0 0 34 34\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M10.1975 0.599C11.957 0.518 12.518 0.5 17 0.5C21.482 0.5 22.043 0.5195 23.801 0.599C25.559 0.6785 26.759 0.959 27.809 1.3655C28.9085 1.781 29.906 2.4305 30.731 3.2705C31.571 4.094 32.219 5.09 32.633 6.191C33.041 7.241 33.32 8.441 33.401 10.196C33.482 11.9585 33.5 12.5195 33.5 17C33.5 21.482 33.4805 22.043 33.401 23.8025C33.3215 25.5575 33.041 26.7575 32.633 27.8075C32.219 28.9086 31.5699 29.9063 30.731 30.731C29.906 31.571 28.9085 32.219 27.809 32.633C26.759 33.041 25.559 33.32 23.804 33.401C22.043 33.482 21.482 33.5 17 33.5C12.518 33.5 11.957 33.4805 10.1975 33.401C8.4425 33.3215 7.2425 33.041 6.1925 32.633C5.09138 32.2189 4.09373 31.5699 3.269 30.731C2.42957 29.907 1.77997 28.9098 1.3655 27.809C0.959 26.759 0.68 25.559 0.599 23.804C0.518 22.0415 0.5 21.4805 0.5 17C0.5 12.518 0.5195 11.957 0.599 10.199C0.6785 8.441 0.959 7.241 1.3655 6.191C1.78058 5.09012 2.43068 4.09297 3.2705 3.269C4.09406 2.42975 5.09071 1.78017 6.191 1.3655C7.241 0.959 8.441 0.68 10.196 0.599H10.1975ZM23.6675 3.569C21.9275 3.4895 21.4055 3.473 17 3.473C12.5945 3.473 12.0725 3.4895 10.3325 3.569C8.723 3.6425 7.85 3.911 7.268 4.1375C6.4985 4.4375 5.948 4.793 5.3705 5.3705C4.82307 5.90308 4.40177 6.55142 4.1375 7.268C3.911 7.85 3.6425 8.723 3.569 10.3325C3.4895 12.0725 3.473 12.5945 3.473 17C3.473 21.4055 3.4895 21.9275 3.569 23.6675C3.6425 25.277 3.911 26.15 4.1375 26.732C4.4015 27.4475 4.823 28.097 5.3705 28.6295C5.903 29.177 6.5525 29.5985 7.268 29.8625C7.85 30.089 8.723 30.3575 10.3325 30.431C12.0725 30.5105 12.593 30.527 17 30.527C21.407 30.527 21.9275 30.5105 23.6675 30.431C25.277 30.3575 26.15 30.089 26.732 29.8625C27.5015 29.5625 28.052 29.207 28.6295 28.6295C29.177 28.097 29.5985 27.4475 29.8625 26.732C30.089 26.15 30.3575 25.277 30.431 23.6675C30.5105 21.9275 30.527 21.4055 30.527 17C30.527 12.5945 30.5105 12.0725 30.431 10.3325C30.3575 8.723 30.089 7.85 29.8625 7.268C29.5625 6.4985 29.207 5.948 28.6295 5.3705C28.0969 4.82311 27.4486 4.40182 26.732 4.1375C26.15 3.911 25.277 3.6425 23.6675 3.569V3.569ZM14.8925 22.0865C16.0695 22.5764 17.3801 22.6426 18.6004 22.2736C19.8207 21.9046 20.8751 21.1234 21.5834 20.0634C22.2917 19.0034 22.6101 17.7303 22.4841 16.4617C22.3581 15.193 21.7955 14.0075 20.8925 13.1075C20.3169 12.5322 19.6208 12.0917 18.8545 11.8177C18.0882 11.5437 17.2706 11.443 16.4607 11.5229C15.6508 11.6028 14.8687 11.8613 14.1707 12.2797C13.4727 12.6981 12.8761 13.2661 12.424 13.9428C11.9718 14.6194 11.6753 15.3879 11.5558 16.1929C11.4363 16.9979 11.4967 17.8194 11.7328 18.5983C11.9689 19.3771 12.3747 20.0939 12.9211 20.6971C13.4674 21.3003 14.1407 21.7748 14.8925 22.0865ZM11.003 11.003C11.7905 10.2155 12.7255 9.59075 13.7544 9.16454C14.7834 8.73833 15.8863 8.51896 17 8.51896C18.1137 8.51896 19.2166 8.73833 20.2456 9.16454C21.2745 9.59075 22.2095 10.2155 22.997 11.003C23.7845 11.7905 24.4092 12.7255 24.8355 13.7544C25.2617 14.7834 25.481 15.8863 25.481 17C25.481 18.1137 25.2617 19.2166 24.8355 20.2456C24.4092 21.2745 23.7845 22.2095 22.997 22.997C21.4065 24.5875 19.2493 25.481 17 25.481C14.7507 25.481 12.5935 24.5875 11.003 22.997C9.4125 21.4065 8.51896 19.2493 8.51896 17C8.51896 14.7507 9.4125 12.5935 11.003 11.003V11.003ZM27.362 9.782C27.5572 9.5979 27.7134 9.37652 27.8215 9.13096C27.9295 8.8854 27.9872 8.62065 27.9911 8.3524C27.995 8.08414 27.9451 7.81782 27.8442 7.56922C27.7434 7.32061 27.5936 7.09477 27.4039 6.90506C27.2142 6.71535 26.9884 6.56564 26.7398 6.46478C26.4912 6.36392 26.2249 6.31396 25.9566 6.31787C25.6883 6.32179 25.4236 6.37948 25.178 6.48754C24.9325 6.59561 24.7111 6.75184 24.527 6.947C24.169 7.32654 23.9729 7.83068 23.9806 8.3524C23.9882 8.87411 24.1988 9.37232 24.5677 9.74126C24.9367 10.1102 25.4349 10.3208 25.9566 10.3284C26.4783 10.3361 26.9825 10.14 27.362 9.782V9.782Z\" fill=\"#fff\"\/><\/svg>": "Instagram",
+                            "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"M25.6842 36C25.2059 36 24.7472 35.8102 24.409 35.4723C24.0707 35.1345 23.8807 34.6763 23.8807 34.1985V29.5144C23.9368 28.9756 23.8791 28.4311 23.7113 27.916C23.5436 27.4008 23.2695 26.9266 22.9069 26.5239C22.6824 26.2806 22.5292 25.9803 22.4643 25.6558C22.3994 25.3314 22.4251 24.9953 22.5388 24.6845C22.6524 24.3738 22.8495 24.1002 23.1085 23.894C23.3675 23.6877 23.6784 23.5567 24.007 23.5153C28.4074 22.9928 32.4652 21.5876 32.4652 13.9671C32.4665 12.544 32.0461 11.1523 31.2568 9.96763C30.5285 8.87702 30.2626 7.5425 30.5174 6.25644C30.68 5.4175 30.68 4.5552 30.5174 3.71626C29.167 4.17237 27.8955 4.83479 26.7482 5.67994C26.5313 5.83382 26.283 5.93785 26.0211 5.98457C25.7592 6.03129 25.4902 6.01955 25.2333 5.95018C21.9787 5.03149 18.5329 5.03149 15.2783 5.95018C15.0215 6.01955 14.7524 6.03129 14.4905 5.98457C14.2286 5.93785 13.9803 5.83382 13.7634 5.67994C12.6091 4.825 11.3241 4.1619 9.95811 3.71626C9.7866 4.55432 9.7866 5.41838 9.95811 6.25644C10.1945 7.55869 9.91656 8.90179 9.18262 10.0037C8.39679 11.1967 7.97683 12.593 7.97431 14.0211C7.97431 21.0291 11.3648 22.9027 16.4505 23.5513C16.7833 23.5926 17.098 23.7257 17.3592 23.9357C17.6205 24.1457 17.8179 24.4244 17.9294 24.7403C18.0342 25.0469 18.0544 25.376 17.9877 25.6931C17.9211 26.0101 17.7701 26.3033 17.5506 26.5419C17.1999 26.9164 16.9306 27.3595 16.7599 27.8433C16.5892 28.327 16.5207 28.8408 16.5587 29.3523V34.1985C16.5587 34.6763 16.3687 35.1345 16.0305 35.4723C15.6923 35.8102 15.2336 36 14.7553 36C14.277 36 13.8183 35.8102 13.48 35.4723C13.1418 35.1345 12.9518 34.6763 12.9518 34.1985V33.1716C11.1797 33.3752 9.38466 33.1379 7.72649 32.481C6.06831 31.8241 4.59843 30.7679 3.44765 29.4063C2.85613 28.7514 2.14643 28.2136 1.35565 27.821C1.12592 27.7618 0.910107 27.6581 0.720525 27.5156C0.530942 27.3731 0.371306 27.1948 0.250731 26.9907C0.130155 26.7866 0.0510019 26.5608 0.0177902 26.3261C-0.0154215 26.0915 -0.00204112 25.8526 0.057167 25.6231C0.116375 25.3936 0.220252 25.178 0.362866 24.9886C0.50548 24.7992 0.684038 24.6398 0.888347 24.5193C1.09265 24.3989 1.31871 24.3198 1.55361 24.2866C1.78851 24.2535 2.02765 24.2668 2.25738 24.326C3.64468 24.8308 4.88428 25.6729 5.86428 26.7761C7.66773 28.5776 9.47117 30.163 12.8977 29.5144C12.8375 28.5472 12.9787 27.5779 13.3125 26.668C9.59742 25.7312 4.29527 23.0649 4.29527 14.0571C4.29052 11.9234 4.91802 9.83607 6.09872 8.05799C6.31803 7.72975 6.40202 7.32962 6.33317 6.94103C5.96875 4.99639 6.17544 2.98795 6.92831 1.15806C7.03061 0.914065 7.18544 0.695568 7.3818 0.518093C7.57817 0.340617 7.81125 0.208516 8.06448 0.131176C8.67766 -0.048979 10.8779 -0.409289 15.0438 2.29303C18.4162 1.48234 21.9331 1.48234 25.3055 2.29303C29.4714 -0.409289 31.6716 -0.0669945 32.2668 0.131176C32.52 0.208516 32.7531 0.340617 32.9495 0.518093C33.1458 0.695568 33.3007 0.914065 33.403 1.15806C34.1573 2.9939 34.364 5.00852 33.9981 6.95904C33.9612 7.13479 33.9597 7.31612 33.9938 7.49244C34.0279 7.66875 34.0968 7.83652 34.1965 7.98593C35.3806 9.76911 36.0082 11.8633 35.9999 14.0031C35.9999 23.1369 30.7338 25.7852 26.9827 26.6139C27.3131 27.5806 27.448 28.6033 27.3794 29.6225V34.1985C27.3803 34.6581 27.2052 35.1007 26.89 35.4356C26.5749 35.7705 26.1435 35.9724 25.6842 36V36Z\" fill=\"#fff\"\/><\/svg>": "Github",
+                            "<svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.1435 10.4535H16.7145V13.2285C17.517 11.6325 19.575 10.1985 22.6665 10.1985C28.593 10.1985 30 13.3755 30 19.2045V30H24V20.532C24 17.2125 23.1975 15.3405 21.1545 15.3405C18.321 15.3405 17.1435 17.358 17.1435 20.5305V30H11.1435V10.4535V10.4535ZM0.855 29.745H6.855V10.1985H0.855V29.745V29.745ZM7.7145 3.825C7.71472 4.32791 7.61498 4.82585 7.42108 5.28988C7.22718 5.75391 6.94298 6.17477 6.585 6.528C5.8596 7.24894 4.87772 7.65248 3.855 7.65C2.83408 7.64931 1.85447 7.2468 1.128 6.5295C0.771317 6.17507 0.488079 5.75374 0.294515 5.28965C0.100952 4.82556 0.000868698 4.32784 0 3.825C0 2.8095 0.405 1.8375 1.1295 1.1205C1.85533 0.402238 2.83536 -0.000448816 3.8565 3.75397e-07C4.8795 3.75397e-07 5.8605 0.4035 6.585 1.1205C7.308 1.8375 7.7145 2.8095 7.7145 3.825Z\" fill=\"#fff\"\/><\/svg>": "LinkedIn"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62a1d93fedeab",
+                        "label": "name",
+                        "name": "name",
+                        "type": "text",
+                        "instructions": "Write the social name:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62bf1d23e59b7",
+                        "label": "Url",
+                        "name": "url",
+                        "type": "url",
+                        "instructions": "Her you can add the website url from your social medias:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_62a1ed282b753",
+                "label": "Footer",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62a1e58495435",
+                "label": "footer_text",
+                "name": "footer_text",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62a1e0969b112",
+                        "label": "Text",
+                        "name": "text",
+                        "type": "text",
+                        "instructions": "Here you can add your text:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Designed and Built with",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a1e1339b113",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62a1e1689b114",
+                        "label": "Text After Image",
+                        "name": "text_after_image",
+                        "type": "text",
+                        "instructions": "Text that comes after the image:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "by",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a1e66e82be5",
+                        "label": "Copy Sign",
+                        "name": "copy_sign",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "&copy;": "Copy sign"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62a1e1b49b115",
+                        "label": "Colorised Text",
+                        "name": "colorised_text",
+                        "type": "text",
+                        "instructions": "Here you add the text that you want to be colorised:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "70",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62a1e1f79b116",
+                        "label": "Colorised",
+                        "name": "colorised",
+                        "type": "select",
+                        "instructions": "You can select if you want the text to be colorised:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "color": "Colorised"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_62a34638a1d9f",
+                "label": "Cursor",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62a34648a1da0",
+                "label": "cursor_image",
+                "name": "cursor_image",
+                "type": "image",
+                "instructions": "Add an image as your cursor:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62b19c23a0f7f",
+                "label": "Formular",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62b19664622ad",
+                "label": "Form",
+                "name": "form",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "[wpforms id=\"264\"]",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_62b8760b6c81b",
+                "label": "404",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62b876146c81c",
+                "label": "Error Page",
+                "name": "error_page",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62b8762b6c81d",
+                        "label": "Title",
+                        "name": "title",
+                        "type": "text",
+                        "instructions": "Here you can add the title for the error page:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "60",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62b879d4ceafb",
+                        "label": "Title last word",
+                        "name": "title_last_word",
+                        "type": "text",
+                        "instructions": "Here you can add the last word of the title, that can be colorised:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62b87a16ceafc",
+                        "label": "Colorise Text",
+                        "name": "colorise_text",
+                        "type": "select",
+                        "instructions": "Select if you can the last word to be colorised or not:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "color": "Colorised"
+                        },
+                        "default_value": false,
+                        "allow_null": 1,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62b876446c81e",
+                        "label": "Text",
+                        "name": "text",
+                        "type": "textarea",
+                        "instructions": "Here you can add the text that will show up on the error page:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "80",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    },
+                    {
+                        "key": "field_62b876726c81f",
+                        "label": "Button Text",
+                        "name": "button_text",
+                        "type": "text",
+                        "instructions": "Text for the button on the error page:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_62b876896c820",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "Here you can add the image for the error page:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62b877a0614af",
+                        "label": "Reverse",
+                        "name": "reverse",
+                        "type": "select",
+                        "instructions": "Here you can select wether you want your text left or right:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "left": "Left",
+                            "right": "Right"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_62bf238cfc83e",
+                "label": "To top button",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62bf23abfc83f",
+                "label": "Button to top outside",
+                "name": "button_to_top_outside",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62bf24ccfc840",
+                "label": "Button to top inside",
+                "name": "button_to_top_inside",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62bda295e2712",
+                "label": "Post Icons",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62bda2a8e2713",
+                "label": "Post Icons",
+                "name": "post_icons",
+                "type": "group",
+                "instructions": "Here you can add icons for your text:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62bf32bbdd034",
+                        "label": "O'Clock",
+                        "name": "clock",
+                        "type": "image",
+                        "instructions": "Here you can add an icon before the 'Read Time' text:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_62bf33c6dd035",
+                        "label": "Tag",
+                        "name": "tag",
+                        "type": "image",
+                        "instructions": "Here you can add an image before your tags:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "id",
+                        "preview_size": "medium",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_62bfe167ac806",
+                "label": "Resume",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62bfe0f1f3ff8",
+                "label": "Resume PDF",
+                "name": "resume_pdf",
+                "type": "file",
+                "instructions": "Here you can upload your pdf file:",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_62c2ddd2117ce",
+                "label": "Pagination",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_62c2dde4117cf",
+                "label": "Pagination",
+                "name": "pagination",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_62c2ddfa117d0",
+                        "label": "Pagination previous",
+                        "name": "pagination_previous",
+                        "type": "select",
+                        "instructions": "Here you can add how you want your previous button to show:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<svg width=\"30\" height=\"30\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2.25 18C2.25 22.1772 3.90937 26.1832 6.86307 29.1369C9.81677 32.0906 13.8228 33.75 18 33.75C22.1772 33.75 26.1832 32.0906 29.1369 29.1369C32.0906 26.1832 33.75 22.1772 33.75 18C33.75 13.8228 32.0906 9.81677 29.1369 6.86307C26.1832 3.90937 22.1772 2.25 18 2.25C13.8228 2.25 9.81677 3.90937 6.86307 6.86307C3.90937 9.81677 2.25 13.8228 2.25 18ZM36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18ZM25.875 16.875C26.1734 16.875 26.4595 16.9935 26.6705 17.2045C26.8815 17.4155 27 17.7016 27 18C27 18.2984 26.8815 18.5845 26.6705 18.7955C26.4595 19.0065 26.1734 19.125 25.875 19.125H12.8407L17.6715 23.9535C17.7761 24.0581 17.8591 24.1823 17.9157 24.3189C17.9723 24.4556 18.0014 24.6021 18.0014 24.75C18.0014 24.8979 17.9723 25.0444 17.9157 25.1811C17.8591 25.3177 17.7761 25.4419 17.6715 25.5465C17.5669 25.6511 17.4427 25.7341 17.3061 25.7907C17.1694 25.8473 17.0229 25.8764 16.875 25.8764C16.7271 25.8764 16.5806 25.8473 16.4439 25.7907C16.3073 25.7341 16.1831 25.6511 16.0785 25.5465L9.3285 18.7965C9.22373 18.692 9.14061 18.5679 9.0839 18.4312C9.02718 18.2945 8.99799 18.148 8.99799 18C8.99799 17.852 9.02718 17.7055 9.0839 17.5688C9.14061 17.4321 9.22373 17.308 9.3285 17.2035L16.0785 10.4535C16.2897 10.2423 16.5763 10.1236 16.875 10.1236C17.1737 10.1236 17.4603 10.2423 17.6715 10.4535C17.8827 10.6647 18.0014 10.9513 18.0014 11.25C18.0014 11.5487 17.8827 11.8353 17.6715 12.0465L12.8407 16.875H25.875Z\" fill=\"white\" fill-opacity=\"0.75\"\/><\/svg>": "Icon",
+                            "Previous": "Text"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_62c2de849ecc6",
+                        "label": "Pagination next",
+                        "name": "pagination_next",
+                        "type": "select",
+                        "instructions": "Here you can add how you want your previous button to show:",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "<svg width=\"30\" height=\"30\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M33.75 18C33.75 13.8228 32.0906 9.81677 29.1369 6.86307C26.1832 3.90937 22.1772 2.25 18 2.25C13.8228 2.25 9.81677 3.90937 6.86307 6.86307C3.90937 9.81677 2.25 13.8228 2.25 18C2.25 22.1772 3.90937 26.1832 6.86307 29.1369C9.81677 32.0906 13.8228 33.75 18 33.75C22.1772 33.75 26.1832 32.0906 29.1369 29.1369C32.0906 26.1832 33.75 22.1772 33.75 18ZM0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18ZM10.125 19.125C9.82663 19.125 9.54048 19.0065 9.3295 18.7955C9.11853 18.5845 9 18.2984 9 18C9 17.7016 9.11853 17.4155 9.3295 17.2045C9.54048 16.9935 9.82663 16.875 10.125 16.875L23.1593 16.875L18.3285 12.0465C18.2239 11.9419 18.1409 11.8177 18.0843 11.6811C18.0277 11.5444 17.9986 11.3979 17.9986 11.25C17.9986 11.1021 18.0277 10.9556 18.0843 10.8189C18.1409 10.6823 18.2239 10.5581 18.3285 10.4535C18.4331 10.3489 18.5573 10.2659 18.6939 10.2093C18.8306 10.1527 18.9771 10.1236 19.125 10.1236C19.2729 10.1236 19.4194 10.1527 19.5561 10.2093C19.6927 10.2659 19.8169 10.3489 19.9215 10.4535L26.6715 17.2035C26.7763 17.308 26.8594 17.4321 26.9161 17.5688C26.9728 17.7055 27.002 17.852 27.002 18C27.002 18.148 26.9728 18.2945 26.9161 18.4312C26.8594 18.5679 26.7763 18.692 26.6715 18.7965L19.9215 25.5465C19.7103 25.7577 19.4237 25.8764 19.125 25.8764C18.8263 25.8764 18.5397 25.7577 18.3285 25.5465C18.1173 25.3353 17.9986 25.0487 17.9986 24.75C17.9986 24.4513 18.1173 24.1647 18.3285 23.9535L23.1593 19.125L10.125 19.125Z\" fill=\"white\" fill-opacity=\"0.75\"\/><\/svg>": "Icon",
+                            "Next": "Text"
+                        },
+                        "default_value": false,
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

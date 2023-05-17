@@ -1,0 +1,42 @@
+@use '../abstracts/index' as *;
+
+// Style the pagination based on WP classes
+.navigation {
+  margin: 1.8rem 0;
+
+  .page-numbers {
+    @include flex(center, center);
+    gap: 0.5rem;
+    padding: 0;
+
+    & li {
+      padding: 10px;
+    }
+
+    &.current {
+      color: color(color-primary);
+      font-size: font-size(font-size-text-m);
+    }
+  }
+
+  .nav-links a:link,
+  .nav-links a:visited {
+    color: color(color-white-m);
+    font-size: font-size(font-size-text-m);
+    transition: all 0.3s ease-in-out;
+
+    & svg path {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .nav-links a:hover,
+  .nav-links a:active {
+    color: color(color-secondary);
+    transform: scale(1.12) translateY(-3px);
+
+    & svg path {
+      fill: color(color-secondary);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use '../abstracts/index' as *;
+
+.blog-page-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 880px;
+
+  // Paragraphs inside the single.php
+  & p {
+    line-height: 1.4;
+  }
+
+  //Blog Single Page
+  .blog-page-html {
+    p:first-of-type::first-letter {
+      color: color(color-blog-html);
+    }
+  }
+  .blog-page-css {
+    p:first-of-type::first-letter {
+      color: color(color-blog-css);
+    }
+  }
+  .blog-page-javascript {
+    p:first-of-type::first-letter {
+      color: color(color-blog-js);
+    }
+  }
+  .blog-page-php {
+    p:first-of-type::first-letter {
+      color: color(color-blog-php);
+    }
+  }
+  .blog-page-wordpress {
+    p:first-of-type::first-letter {
+      color: color(color-blog-wp);
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 3rem;
+      font-size: font-size(font-size-heading-blog);
+    }
+  }
+
+  .blog-page-header {
+    margin-bottom: 4rem;
+
+    // Subheader
+    .blog-page-subheader {
+      @include flex(stretch, stretch);
+      flex-direction: column;
+      gap: 0.6rem;
+
+      /* MEDIA QUERY MIN-WIDTH: 820px */
+      @include media(break-point(break-point-big-tablet)) {
+        flex-direction: row;
+        margin-bottom: 2rem;
+        gap: 1.2rem;
+      }
+      &__field {
+        display: flex;
+
+        & img {
+          width: 18px;
+          height: auto;
+        }
+
+        & p {
+          margin: -0.2rem 0.5rem;
+          color: color(color-white-m);
+        }
+      }
+    }
+  }
+}

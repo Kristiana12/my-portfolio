@@ -1,0 +1,73 @@
+@use '../abstracts/index' as *;
+
+//Backgorund
+pre.prism.line-numbers.language-php {
+  background-color: color(color-bg-code);
+}
+
+//Line Background
+div.hcb_wrap {
+  &.hcb_wrap {
+    code,
+    pre {
+      background-color: color(color-bg-code);
+    }
+  }
+}
+
+span.token.comment,
+span.token.prolog,
+span.token.doctype,
+span.token.cdata {
+  color: color(color-comment-code);
+}
+
+span.token.property,
+span.token.tag,
+span.token.constant,
+span.token.symbol,
+span.token.deleted,
+span.token.important {
+  color: #ff2c78;
+}
+
+span.token.keyword,
+span.token.operator {
+  color: color(color-operator-code);
+}
+
+span.token.atrule,
+span.token.attr-value,
+span.token.function,
+span.token.string {
+  color: color(color-string-code);
+}
+
+span.token.function,
+span.token.keyword.def {
+  color: color(color-function-code);
+}
+
+span.token.boolean,
+span.token.number {
+  color: color(color-operator-code);
+}
+
+span.token.selector,
+span.token.attr-name,
+span.token.char,
+span.token.builtin,
+span.token.inserted,
+span.token.class-name {
+  color: color(color-function-code);
+}
+
+span.token.keyword,
+span.token.operator {
+  color: color(color-keyword-code);
+}
+
+//Copy button
+.hcb-clipboard {
+  cursor: pointer;
+}

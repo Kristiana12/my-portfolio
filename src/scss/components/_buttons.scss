@@ -1,0 +1,131 @@
+@use '../abstracts/index' as *;
+
+/* BUTTON PRIMARY + Gutenberg Button */
+#contact__form .btn-primary,
+.btn-primary,
+a.wp-block-button__link {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  border-radius: 40px;
+  background-color: color(color-bg-primary);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 500ms, color 500ms, transform 200ms;
+  border: none;
+}
+a.wp-block-button__link {
+  margin: 0 1rem;
+}
+
+#contact__form .btn-primary::after,
+.btn-primary::after,
+a.wp-block-button__link::after {
+  content: '';
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    135deg,
+    color(color-secondary),
+    color(color-bg-secondary)
+  );
+  border-radius: 40px;
+  z-index: -1;
+  transition: transform 500ms, opacity 500ms;
+}
+
+#contact__form .btn-primary:hover::after,
+.btn-primary:hover::after,
+a.wp-block-button__link:hover::after {
+  opacity: 0;
+  transform: scale(1.5);
+}
+
+#contact__form .btn-primary:hover,
+.btn-primary:hover {
+  background-color: color(color-glassmorphism-light);
+}
+
+#contact__form .btn-primary:active,
+.btn-primary:active {
+  transform: translateY(2px) scale(0.95);
+}
+
+#projects,
+#contact {
+  padding-top: 1rem;
+}
+
+/* To top Button */
+.image-to-top {
+  display: none;
+
+  @include media(break-point(break-point-desktop)) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: calc(0.5rem + 5vw);
+    bottom: 35px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+  }
+
+  /* MEDIA QUERY MIN-WIDTH: 1500px */
+  @include media(break-point(break-point-big-screen)) {
+    right: calc(0.5rem + 10vw);
+  }
+
+  .arrow-up {
+    height: 25px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bubble-to-top {
+    opacity: 0.5;
+  }
+}
+
+body.show .image-to-top {
+  opacity: 1;
+  visibility: visible;
+}
+
+// BLOG BUTTON
+.btn-secondary {
+  margin-top: 1.5rem;
+  display: inline-block;
+  padding: 0.4rem 1.8rem;
+  border: color(color-secondary) 2px solid;
+  background-color: transparent;
+  color: color(color-white);
+  font-size: 1.1rem;
+  font-family: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: color(color-bg-primary);
+  }
+  /* MEDIA QUERY MIN-WIDTH: 1500px */
+  @include media(break-point(break-point-tablet)) {
+    margin-top: 2.5rem;
+    padding: 0.6rem 2.4rem;
+  }
+}
+
+.button img {
+  width: 25px;
+  margin-right: 0.5rem;
+}

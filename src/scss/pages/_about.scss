@@ -1,0 +1,113 @@
+@use '../abstracts/index' as *;
+
+/* SUBPAGES STYLING */
+.subpage__header {
+  // @include flex(center, center);
+  //flex-direction: column;
+  // flex-wrap: wrap;
+  // gap: 2.5rem;
+  // min-height: max-content;
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    // flex-direction: row;
+    // justify-content: space-around;
+  }
+}
+
+.page__subpage--content {
+  min-height: max-content;
+}
+
+.subpage__header--block-container {
+  @include flex(center, center);
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  min-height: max-content;
+
+  &.right {
+    flex-direction: column;
+  }
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-desktop)) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &.right {
+      flex-direction: row;
+    }
+  }
+}
+
+/* ROUNDED IMAGE */
+.rounded-image {
+  display: inline-block;
+  animation: none;
+  position: relative;
+
+  & img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /* MEDIA QUERY MIN-WIDTH: 768px */
+    @include media(break-point(break-point-desktop)) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+.rounded-image::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    color(color-bg-secondary),
+    color(color-secondary)
+  );
+  z-index: -1;
+  filter: blur(6px);
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-desktop)) {
+    width: 304px;
+    height: 304px;
+  }
+}
+
+/* SECTION SKILLS */
+ul.skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2));
+  gap: 1.5rem 0;
+  padding: 0;
+  list-style-position: inside;
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    grid-template-columns: repeat(3, calc(100% / 3));
+    justify-content: center;
+  }
+}
+
+ul.skills__list li {
+  position: relative;
+
+  @include media(break-point(break-point-big-tablet)) {
+  }
+}
+
+ul.skills__list span {
+  position: absolute;
+  top: -2px;
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,28 @@
+@use '../abstracts/index' as *;
+
+//color
+.has-color-primary-color {
+  color: color(color-primary);
+}
+.has-color-secondary-color {
+  color: color(color-secondary);
+}
+.has-color-text-color {
+  color: color(color-white);
+}
+.has-color-background-color {
+  color: color(color-bg-primary);
+}
+//Background-color
+.has-color-bg-primary-color {
+  background-color: color(color-primary);
+}
+.has-color-bg-secondary-color {
+  background-color: color(color-secondary);
+}
+.has-color-bg-text-color {
+  background-color: color(color-white);
+}
+.has-color-bg-background-color {
+  background-color: color(color-bg-primary);
+}

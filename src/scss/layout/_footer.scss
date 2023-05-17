@@ -1,0 +1,51 @@
+@use '../abstracts/index' as *;
+
+footer.footer {
+  @include flex(center, center);
+  flex-direction: column;
+  padding: 1rem 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: color(color-glassmorphism-light);
+
+  .footer__nav--list {
+    @include flex(space-around, center);
+    margin: 0;
+    padding: 0;
+    max-width: max-content;
+
+    & > li {
+      padding: 1rem 1.2rem 0.5rem;
+
+      & > a {
+        display: block;
+      }
+
+      & svg {
+        transition: transform 0.3s ease;
+      }
+      & svg path {
+        transition: fill 0.3s ease;
+      }
+      &:hover svg path {
+        fill: color(color-primary);
+      }
+      &:hover svg {
+        transform: scale(1.2) translateY(-4px);
+      }
+    }
+
+    & svg {
+      height: 20px;
+      width: auto;
+    }
+  }
+
+  // HEART ICON
+  .heart-icon {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    margin: 0 0.2rem;
+  }
+}

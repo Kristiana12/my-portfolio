@@ -1,0 +1,71 @@
+@use '../abstracts/index' as *;
+
+.projects__gallery {
+  /* Card */
+  &--card {
+    display: block;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 500px;
+    cursor: pointer;
+    /* Fade in on scroll */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+
+    /* MEDIA QUERY MIN-WIDTH: 820px */
+    @include media(break-point(break-point-big-tablet)) {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  &--card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: color(color-bg-primary-m);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  /* Hover Effect */
+  &--card:hover::before,
+  &--card:active::before,
+  &--card:focus-visible::before {
+    opacity: 1;
+  }
+
+  &--card:hover > &--card__text,
+  &--card:active > &--card__text,
+  &--card:focus-visible > &--card__text {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* Card Text */
+  &--card__text {
+    @include flex(center, center);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: color(color-bg-secondary);
+    transition: transform 0.4s ease-in-out;
+
+    & p {
+      color: color(color-white);
+    }
+  }
+
+  /* Fade In Card */
+  &--card.showCard {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

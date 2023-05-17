@@ -1,0 +1,92 @@
+@use '../abstracts/index' as *;
+/***** BLOG *****/
+/* Categories */
+.categories {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+
+  .cat-item {
+    // width: calc(100% / 2 - 1rem);
+    width: 10rem;
+    text-align: center;
+    background-color: color(color-glassmorphism-light);
+    color: color(color-white);
+    padding: 0.8rem 1.5rem 0.8rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px 4px color(color-glassmorphism-dark);
+    transition: all 0.2s ease-in-out;
+
+    /* MEDIA QUERY MIN-WIDTH: 820px */
+    @include media(break-point(break-point-big-tablet)) {
+      // width: calc(100% / 3 - 1rem);
+    }
+
+    &:hover {
+      background-color: color(color-bg-primary-shadow2);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 4px 5px 4px color(color-glassmorphism-dark),
+        inset 2px 2px 4px color(color-glassmorphism-light),
+        inset -2px -2px 4px color(color-glassmorphism-light);
+    }
+
+    & > a {
+      display: block;
+      color: color(color-white);
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: calc(100% + 1.6rem);
+        top: -0.8rem;
+        right: -1.5rem;
+      }
+    }
+    // All additional categories that are going to be added in the future gonna have a white color
+    a[href*='category']::before {
+      background-color: color(color-white);
+    }
+    a[href*='html']::before {
+      background-color: color(color-blog-html);
+    }
+    a[href*='css']::before {
+      background-color: color(color-blog-css);
+    }
+    a[href*='javascript']::before {
+      background-color: color(color-blog-js);
+    }
+    a[href*='wordpress']::before {
+      background-color: color(color-blog-wp);
+    }
+    a[href*='php']::before {
+      background-color: color(color-blog-php);
+    }
+  }
+}
+
+/* Title */
+.section-blog h3 {
+  display: inline-block;
+  position: relative;
+  font-size: font-size(font-size-text-l);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: color(color-secondary);
+    border-radius: 20px;
+  }
+}
+
+// Blog Button
+.section__posts--button {
+  text-align: center;
+  margin-top: 3rem;
+}

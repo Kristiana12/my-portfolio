@@ -1,0 +1,105 @@
+@use '../abstracts/index' as *;
+@use '../abstracts/animations' as *;
+
+/* BUBBLES */
+.bubble {
+  height: auto;
+  position: absolute;
+  transform: scale(0);
+  animation: bubble-grow 3s ease 0.5s forwards,
+    animate-bubble 10s linear 3.2s infinite alternate;
+  z-index: -3;
+}
+
+/* BUBBLES */
+.bubble-home-s {
+  width: 40px;
+  right: 8vw;
+  bottom: 20vh;
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-tablet)) {
+    & {
+      right: 0;
+      bottom: 40px;
+    }
+  }
+}
+
+.bubble-home-m {
+  width: 60px;
+  left: 5vw;
+  top: 12vh;
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-tablet)) {
+    & {
+      width: 50px;
+      left: 0;
+      top: 8%;
+    }
+  }
+}
+
+.bubble-home-l {
+  width: 70px;
+  right: 0;
+  top: 5vh;
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-tablet)) {
+    & {
+      width: 50px;
+      right: 40px;
+      top: 8vh;
+    }
+  }
+}
+
+// ********  ON SUBPAGES BUBBLES
+.subpage__header {
+  /* BUBBLES */
+  .bubble-home-s {
+    width: 40px;
+    right: 5vw;
+    bottom: 10px;
+
+    /* MEDIA QUERY MIN-WIDTH: 768px */
+    @include media(break-point(break-point-tablet)) {
+      & {
+        right: 0;
+        bottom: 40px;
+      }
+    }
+  }
+
+  .bubble-home-m {
+    width: 40px;
+    left: 2vw;
+    top: 12vh;
+
+    /* MEDIA QUERY MIN-WIDTH: 768px */
+    @include media(break-point(break-point-tablet)) {
+      & {
+        width: 60px;
+        left: 25px;
+        bottom: 5%;
+      }
+    }
+  }
+
+  .bubble-home-l {
+    width: 50px;
+    right: 0;
+    top: 5vh;
+
+    /* MEDIA QUERY MIN-WIDTH: 768px */
+    @include media(break-point(break-point-tablet)) {
+      & {
+        width: 50px;
+        right: 40px;
+        top: 8vh;
+      }
+    }
+  }
+}

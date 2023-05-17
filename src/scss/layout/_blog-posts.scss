@@ -1,0 +1,16 @@
+@use '../abstracts/index' as *;
+
+/* Posts All layout */
+.section__posts--all {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  /* MEDIA QUERY MIN-WIDTH: 700px */
+  @include media(break-point(break-point-blog-small)) {
+    grid-template-columns: repeat(2, calc(50% - 0.5rem));
+  }
+  @include media(break-point(break-point-blog-big)) {
+    grid-template-columns: repeat(3, calc(100% / 3 - 1rem));
+  }
+}

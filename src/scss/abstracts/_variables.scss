@@ -1,0 +1,62 @@
+$colors: (
+  'color-bg-primary': #0f0823,
+  'color-bg-primary-m': rgba(15, 8, 35, 0.95),
+  'color-bg-primary-shadow1': rgba(15, 8, 35, 0.1),
+  'color-bg-primary-shadow2': rgba(15, 8, 35, 0.2),
+  'color-bg-secondary': #291d84,
+  'color-bg-footer': #1d1830,
+  'color-primary': #c900fc,
+  'color-primary-m': hsla(288, 100%, 49%, 0.7),
+  'color-secondary': #e99eff,
+  'color-secondary-m': rgba(232, 158, 255, 0.3),
+  'color-white': #fff,
+  'color-white-m': rgba(255, 255, 255, 0.8),
+  'color-glassmorphism-light': rgba(164, 164, 164, 0.1),
+  'color-glassmorphism-dark': rgba(0, 0, 0, 0.2),
+  'color-error': #dc143c,
+  // BLOG
+  'color-blog-html': #ff5c00,
+  'color-blog-css': #187cff,
+  'color-blog-js': #ffe400,
+  'color-blog-wp': #03b9f2,
+  'color-blog-php': #bd00ff,
+  'color-blog-sass': #cd6799,
+  'color-bg-blog-card': rgba(255, 255, 255, 0.1),
+  //Code Snippet
+  'color-bg-code': #0a0d1c,
+  'color-comment-code': #6181de,
+  'color-string-code': #f1fa8c,
+  'color-operator-code': #bd93f9,
+  'color-function-code': #50fa7b,
+  'color-keyword-code': #ff79c6,
+);
+
+$font-sizes: (
+  'font-size-heading-xxl': 12rem,
+  'font-size-heading-xl': 8rem,
+  'font-size-heading-l': 4rem,
+  'font-size-heading-m': 2.5rem,
+  'font-size-heading-blog': 2rem,
+  'font-size-heading-s': 1.5rem,
+  'font-size-text-l': 1.5rem,
+  'font-size-text-m': 1.125rem,
+  'font-size-text-s': 1.05rem,
+  'font-size-text-xs': 0.875rem,
+  'font-size-link-s': 1.3rem,
+  'font-size-link-xs': 1rem,
+);
+
+$font-families: (
+  'font-family-header': poppins,
+  'font-family-text': mr-eaves-xl-modern,
+);
+
+$break-points: (
+  'break-point-small-screen': 530px,
+  'break-point-blog-small': 700px,
+  'break-point-tablet': 768px,
+  'break-point-big-tablet': 820px,
+  'break-point-desktop': 1040px,
+  'break-point-blog-big': 1100px,
+  'break-point-big-screen': 1500px,
+);

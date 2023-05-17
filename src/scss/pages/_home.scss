@@ -1,0 +1,51 @@
+@use '../abstracts/index' as *;
+@use '../abstracts/animations' as *;
+
+.page__header {
+  position: relative;
+  &--content {
+    min-height: 90vh;
+    @include flex(center, center);
+    flex-direction: column;
+
+    /* MEDIA QUERY MIN-WIDTH: 820px */
+    @include media(break-point(break-point-desktop)) {
+      & {
+        align-items: flex-start;
+      }
+    }
+
+    &.center {
+      align-items: center;
+    }
+  }
+
+  /* MEDIA QUERY MIN-WIDTH: 768px */
+  @include media(break-point(break-point-big-tablet)) {
+    /* HEADER */
+    & {
+      @include flex(space-around, center);
+    }
+  }
+
+  &--image {
+    display: none;
+
+    /* MEDIA QUERY MIN-WIDTH: 820px */
+    @include media(break-point(break-point-big-tablet)) {
+      display: block;
+      max-width: 250px;
+      animation: animate-bubble 12s linear infinite alternate;
+    }
+  }
+}
+
+// If there is no image next to text (theme)
+.page__header--content__has-no-image {
+  align-items: center;
+}
+
+//If user wants to switch the layout
+.page__header.right {
+  flex-direction: row-reverse;
+}

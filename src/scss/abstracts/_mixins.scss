@@ -1,0 +1,32 @@
+@use 'functions' as *;
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin nav-mobile-dimensions {
+  width: 56px;
+  height: 56px;
+}
+
+@mixin lineAfterTitle($color) {
+  &::after {
+    content: '';
+    width: 25%;
+    height: 4px;
+    background-color: color($color);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+  }
+}
+
+@mixin media($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

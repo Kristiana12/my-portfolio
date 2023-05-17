@@ -1,0 +1,29 @@
+@use '../abstracts/index' as *;
+
+.projects__gallery {
+  @include flex(center, stretch);
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: font-size(font-size-text-m);
+
+  /* MEDIA QUERY MIN-WIDTH: 820px */
+  @include media(break-point(break-point-big-tablet)) {
+    justify-content: space-between;
+    gap: 2rem 1rem;
+  }
+
+  & h4 {
+    text-align: center;
+    width: 100%;
+
+    /* MEDIA QUERY MIN-WIDTH: 820px */
+    @include media(break-point(break-point-big-tablet)) {
+      font-size: font-size(font-size-text-l);
+      text-align: left;
+    }
+  }
+}
+
+.page__subpage--content__center {
+  @include flex(center, center);
+}
