@@ -14,6 +14,8 @@
 
 ## Overview
 
+In order to create my portfolio, I created this custom Wordpress theme, using HTML, SASS, Javascript, PHP.
+
 
 ### Built with
 
